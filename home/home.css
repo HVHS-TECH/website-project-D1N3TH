@@ -40,11 +40,15 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     background-color: #AEDD94;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.2s ease, opacity 0.3s ease;
+    opacity: 0;
+    z-index: 998;
     min-width: 100%;
 }
 
@@ -57,7 +61,8 @@ body {
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
+    max-height: 500px;
+    opacity: 1;
 }
 
 .hover-underline {
