@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>University Entrance</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body>
+        <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="/home/index.html" class="hover-underline">Home</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="hover-underline">University Admission</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../universityEntrance/universityEntrance.html" class="holographic-animation">University Entrance</a></li>
+                    <li><a href="../scholarships/scholarships.html" class="holographic-animation">Scholarships</a></li>
+                    <li><a href="../nzUniversities/nzUniversities.html" class="holographic-animation">NZ Universities</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="hover-underline">Student Life</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../universityLife/universityLife.html" class="holographic-animation">University Life</a></li>
+                    <li><a href="../finance&Accommodation/finance&Accommodation.html" class="holographic-animation">Finance and Accommodation</a></li>
+                    <li><a href="../internationalStudents/internationalStudents.html" class="holographic-animation">International Students</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="hover-underline">Help & Resources</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../FAQ's/FAQ's.html" class="holographic-animation">FAQ's</a></li>
+                </ul>
+            </li>
+            <li>
+                <form id="searchForm" onsubmit="searchMaterial(event)">
+                    <input type="search" id="searchInput" placeholder="Search here..." autocomplete="off">
+                    <i class="fa fa-search" onclick="document.getElementById('searchForm').requestSubmit()"></i>
+                </form>
+            </li>
+        </ul>
+
+        <div id="results"></div>
+        </nav>
+
+        <section class="welcome-section">
+            <div class="welcome-container">
+                <h2>University Entrance</h2>
+                <h3>What you actually need to get in to university...</h3>
+                <p>
+                Understanding how to get into university is essential for every student. Here’s a step-by-step guide to help you meet the entrance requirements in New Zealand. 
+                To gain University Entrance you need:
+                <ul>
+
+                
+                <li>NCEA Level 3</li>
+                <li>14 credits in three approved subjects</li>
+                <li>10 literacy credits (5 in reading, 5 in writing)</li>
+                <li>10 numeracy credits</li>
+                <li>Some universities or specific programs (e.g. Medicine, Law, Engineering) have higher entry requirements or require extra assessments. Always check university websites for details.</li>
+                </ul>
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/home/index.html">Home</a></li>
+                        <li><a href="../universityEntrance/universityEntrance.html">University Entrance</a></li>
+                        <li><a href="../scholarships/scholarships.html">Scholarships</a></li>
+                        <li><a href="../internationalStudents/internationalStudents.html">International Students</a></li>
+                        <li><a href="../FAQ's/FAQ's.html">FAQ's</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:info@uniinfo.nz">info@uniready.nz</a></p>
+                    <p>Phone: +64 123 456 789</p>
+                    <p>Address: 123 University Rd, Wellington, NZ</p>
+                </div>
+
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f icon"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icon"></i></a></li>
+                        <li><a href="https://nz.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube icon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 UniReady.</p>
+            </div>
+        </footer>
+        <script src="/script.js"></script>
+    </body>
+</html>

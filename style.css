@@ -200,7 +200,7 @@ form:hover .fa {
 
 footer {
   margin: 0;
-  padding: 40px 0;
+  padding: 0;
   background-color: #AEDD94;
   text-align: center;
 }
@@ -388,6 +388,7 @@ footer .social-icons li:nth-child(4) a::before {
   display: block;
   width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .text1, .text2, .text3, .text4, .fa fa-angle-double-down {
