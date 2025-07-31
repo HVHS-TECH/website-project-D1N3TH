@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>FAQ's</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body>
+        <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="/home/index.html" class="hover-underline">Home</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="hover-underline">University Admission</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../universityEntrance/universityEntrance.html" class="holographic-animation">University Entrance</a></li>
+                    <li><a href="../scholarships/scholarships.html" class="holographic-animation">Scholarships</a></li>
+                    <li><a href="../nzUniversities/nzUniversities.html" class="holographic-animation">NZ Universities</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="hover-underline">Student Life</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../universityLife/universityLife.html" class="holographic-animation">University Life</a></li>
+                    <li><a href="../finance&Accommodation/finance&Accommodation.html" class="holographic-animation">Finance and Accommodation</a></li>
+                    <li><a href="../internationalStudents/internationalStudents.html" class="holographic-animation">International Students</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="hover-underline">Help & Resources</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../FAQ's/FAQ's.html" class="holographic-animation">FAQ's</a></li>
+                </ul>
+            </li>
+            <li>
+                <form id="searchForm" onsubmit="searchMaterial(event)">
+                    <input type="search" id="searchInput" placeholder="Search here..." autocomplete="off">
+                    <i class="fa fa-search" onclick="document.getElementById('searchForm').requestSubmit()"></i>
+                </form>
+            </li>
+        </ul>
+
+        <div id="results"></div>
+        </nav>
+
+        <section class="welcome-section">
+            <div class="welcome-container">
+                <h2>FAQs</h2>
+                <h3>Find commonly asked questions and answers for them</h3>
+                <p>
+                    Here are answers to common university-related questions:
+                    <ol>
+                        <li>What is the difference between undergraduate and postgraduate study?</li>
+                        <ul>
+                        <li>Undergraduate = First degree (e.g. Bachelor’s)</li>
+                        <li>Postgraduate = Advanced study after a Bachelor’s (e.g. Master’s, PhD)</li>
+                        </ul>
+
+                        <li>Do I need NCEA Level 3 for all universities?</li>
+                        <ul>
+                            <li>Yes but some universities offer alternative pathways like foundation programs</li>
+                        </ul>
+                        <li>Can I change my university course after I start?</li>
+                        <ul>
+                            <li>Yes, most universities allow you to change courses within the first few weeks of the semester.
+                                 Some changes may require approval, and there might be deadlines, so check with your university’s
+                                  student support services.</li>
+                        </ul>
+                        <li>Do I have to take out a student loan to study at university?</li>
+                        <ul>
+                            <li>No, but most students use Student Loans to cover tuition fees. 
+                                You can also apply for scholarships or work part-time to help with costs. 
+                                If your family can support you financially, you may not need a loan.</li>
+                        </ul>
+                    </ol>
+
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/home/index.html">Home</a></li>
+                        <li><a href="../universityEntrance/universityEntrance.html">University Entrance</a></li>
+                        <li><a href="../scholarships/scholarships.html">Scholarships</a></li>
+                        <li><a href="../internationalStudents/internationalStudents.html">International Students</a></li>
+                        <li><a href="../FAQ's/FAQ's.html">FAQ's</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:info@uniinfo.nz">info@uniready.nz</a></p>
+                    <p>Phone: +64 123 456 789</p>
+                    <p>Address: 123 University Rd, Wellington, NZ</p>
+                </div>
+
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f icon"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icon"></i></a></li>
+                        <li><a href="https://nz.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube icon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 UniReady.</p>
+            </div>
+        </footer>
+        <script src="/script.js"></script>
+    </body>
+</html>
