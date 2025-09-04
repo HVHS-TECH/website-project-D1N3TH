@@ -12,6 +12,11 @@ function populateSearchableContent() {
             keywords: "home, main page, uniready, welcome, new zealand universities, student life, university admission, help resources"
         },
         {
+            title: "About Us",
+            url: "../about.html",
+            keywords: "about us, who we are, our mission, what we do, uniready, purpose, team"
+        },
+        {
             title: "University Entrance Requirements (Main)",
             url: "../universityEntrance/universityEntrance.html",
             keywords: "university entrance, NCEA, level 3, credits, literacy, numeracy, requirements, what you need to get in, admission criteria"
@@ -283,16 +288,46 @@ resultsDiv.addEventListener('click', function(event) {
     }
 });
 
+function isMobileView() {
+    return window.matchMedia("(max-width: 1024px)").matches;
+}
+
+function toggleDropdown(event) {
+    event.preventDefault();
+    const dropdownMenu = event.currentTarget.nextElementSibling;
+    if (dropdownMenu.style.display === 'block') {
+        dropdownMenu.style.display = 'none';
+    } else {
+        dropdownMenu.style.display = 'block';
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const dropdowns = document.querySelectorAll('.dropdown');
-
+    
     dropdowns.forEach(dropdown => {
+        const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
+        const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+        
+        // Desktop: Hover functionality
         dropdown.addEventListener('mouseenter', function() {
-            this.querySelector('.dropdown-menu').style.display = 'block';
+            if (!isMobileView()) {
+                dropdownMenu.style.display = 'block';
+            }
         });
 
         dropdown.addEventListener('mouseleave', function() {
-            this.querySelector('.dropdown-menu').style.display = 'none';
+            if (!isMobileView()) {
+                dropdownMenu.style.display = 'none';
+            }
+        });
+        
+        // Mobile/Tablet: Click functionality
+        dropdownToggle.addEventListener('click', function(event) {
+            if (isMobileView()) {
+                event.preventDefault();
+                toggleDropdown(event);
+            }
         });
     });
 
@@ -310,4 +345,11 @@ document.addEventListener('DOMContentLoaded', function() {
             link.style.setProperty('--y', `${y}px`);
         });
     });
+});
+
+const mobileMenu = document.getElementById('mobile-menu');
+const navList = document.querySelector('.nav-list');
+
+mobileMenu.addEventListener('click', () => {
+    navList.classList.toggle('active');
 });

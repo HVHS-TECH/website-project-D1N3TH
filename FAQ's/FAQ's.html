@@ -9,42 +9,46 @@
     </head>
     <body>
         <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="/home/index.html" class="hover-underline">Home</a></li>
-
-            <li class="dropdown">
-                <a href="#" class="hover-underline">University Admission</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../universityEntrance/universityEntrance.html" class="holographic-animation">University Entrance</a></li>
-                    <li><a href="../scholarships/scholarships.html" class="holographic-animation">Scholarships</a></li>
-                    <li><a href="../nzUniversities/nzUniversities.html" class="holographic-animation">NZ Universities</a></li>
-                </ul>
-            </li>
-
-            <li class="dropdown">
-                <a href="#" class="hover-underline">Student Life</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../universityLife/universityLife.html" class="holographic-animation">University Life</a></li>
-                    <li><a href="../finance&Accommodation/finance&Accommodation.html" class="holographic-animation">Finance and Accommodation</a></li>
-                    <li><a href="../internationalStudents/internationalStudents.html" class="holographic-animation">International Students</a></li>
-                </ul>
-            </li>
-
-            <li class="dropdown">
-                <a href="#" class="hover-underline">Help & Resources</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../FAQ's/FAQ's.html" class="holographic-animation">FAQ's</a></li>
-                </ul>
-            </li>
-            <li>
-                <form id="searchForm" onsubmit="searchMaterial(event)">
-                    <input type="search" id="searchInput" placeholder="Search here..." autocomplete="off">
-                    <i class="fa fa-search" onclick="document.getElementById('searchForm').requestSubmit()"></i>
-                </form>
-            </li>
-        </ul>
-
-        <div id="results"></div>
+            <div class="logo-container">
+                <a href="/home/index.html">
+                    <img src="/images/websiteLogo.png" alt="UniReady Logo">
+                </a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-list">
+                <li><a href="/home/index.html" class="hover-underline">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="hover-underline">University Admission</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../universityEntrance/universityEntrance.html" class="holographic-animation">University Entrance</a></li>
+                        <li><a href="../scholarships/scholarships.html" class="holographic-animation">Scholarships</a></li>
+                        <li><a href="../nzUniversities/nzUniversities.html" class="holographic-animation">NZ Universities</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="hover-underline">Student Life</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../universityLife/universityLife.html" class="holographic-animation">University Life</a></li>
+                        <li><a href="../finance&Accommodation/finance&Accommodation.html" class="holographic-animation">Finance and Accommodation</a></li>
+                        <li><a href="../internationalStudents/internationalStudents.html" class="holographic-animation">International Students</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="hover-underline">Help & Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../FAQ's/FAQ's.html" class="holographic-animation">FAQ's</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <form id="searchForm" onsubmit="searchMaterial(event)">
+                        <input type="search" id="searchInput" placeholder="Search here..." autocomplete="off">
+                        <i class="fa fa-search" onclick="document.getElementById('searchForm').requestSubmit()"></i>
+                    </form>
+                </li>
+            </ul>
+            <div id="results"></div>
         </nav>
 
         <section class="welcome-section">
@@ -56,8 +60,8 @@
                     <ol>
                         <li>What is the difference between undergraduate and postgraduate study?</li>
                         <ul>
-                        <li>Undergraduate = First degree (e.g. Bachelor’s)</li>
-                        <li>Postgraduate = Advanced study after a Bachelor’s (e.g. Master’s, PhD)</li>
+                            <li>Undergraduate = First degree (e.g. Bachelor’s)</li>
+                            <li>Postgraduate = Advanced study after a Bachelor’s (e.g. Master’s, PhD)</li>
                         </ul>
 
                         <li>Do I need NCEA Level 3 for all universities?</li>
@@ -67,13 +71,13 @@
                         <li>Can I change my university course after I start?</li>
                         <ul>
                             <li>Yes, most universities allow you to change courses within the first few weeks of the semester.
-                                 Some changes may require approval, and there might be deadlines, so check with your university’s
-                                  student support services.</li>
+                                Some changes may require approval, and there might be deadlines, so check with your university’s
+                                student support services.</li>
                         </ul>
                         <li>Do I have to take out a student loan to study at university?</li>
                         <ul>
-                            <li>No, but most students use Student Loans to cover tuition fees. 
-                                You can also apply for scholarships or work part-time to help with costs. 
+                            <li>No, but most students use Student Loans to cover tuition fees.
+                                You can also apply for scholarships or work part-time to help with costs.
                                 If your family can support you financially, you may not need a loan.</li>
                         </ul>
                     </ol>

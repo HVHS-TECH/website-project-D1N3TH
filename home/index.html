@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Home</title>
-        <link rel="stylesheet" href="/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    </head>
-    <body>
-        <nav class="navbar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="/home/index.html">
+                <img src="/images/websiteLogo.png" alt="UniReady Logo">
+            </a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
         <ul class="nav-list">
             <li><a href="/home/index.html" class="hover-underline">Home</a></li>
-
             <li class="dropdown">
                 <a href="#" class="hover-underline">University Admission</a>
                 <ul class="dropdown-menu">
@@ -20,7 +27,6 @@
                     <li><a href="../nzUniversities/nzUniversities.html" class="holographic-animation">NZ Universities</a></li>
                 </ul>
             </li>
-
             <li class="dropdown">
                 <a href="#" class="hover-underline">Student Life</a>
                 <ul class="dropdown-menu">
@@ -29,7 +35,6 @@
                     <li><a href="../internationalStudents/internationalStudents.html" class="holographic-animation">International Students</a></li>
                 </ul>
             </li>
-
             <li class="dropdown">
                 <a href="#" class="hover-underline">Help & Resources</a>
                 <ul class="dropdown-menu">
@@ -43,80 +48,76 @@
                 </form>
             </li>
         </ul>
-
         <div id="results"></div>
-        </nav>
+    </nav>
 
-        <div class="container">
-            <img src="../images/heroImage.jpeg" alt="Home Page Image (University Students)">
-            <div class="text1">Everything You</div>
-            <div class="text2">Need to Know</div>
-            <div class="text3">About University</div>
-            <div class="text4">Scroll down for more info</div>
-            <i class="fa fa-angle-double-down"></i>
-        </div>
+    <div class="container">
+        <img src="../images/heroImage.jpeg" alt="Home Page Image (University Students)">
+        <div class="text1">Everything You</div>
+        <div class="text2">Need to Know</div>
+        <div class="text3">About University</div>
+        <div class="text4">Scroll down for more info</div>
+        <i class="fa fa-angle-double-down"></i>
+    </div>
 
-        <section class="welcome-section">
-            <div class="welcome-container">
-                <h2>Welcome to UniReady</h2>
-                <p>
+    <section class="welcome-section">
+        <div class="welcome-container">
+            <h2>Welcome to UniReady</h2>
+            <p>
                 Your go-to guide for understanding the university process in New Zealand!
                 We know that planning for university can be overwhelming, so we’ve created this website to help Year 12 and 13 students
                 navigate everything from university entrance requirements to scholarships, accommodation, and student life.
-                </p>
+            </p>
 
-                <h3>What you’ll find here:</h3>
-                <ul>
-                    <li>Step-by-step guidance on university admission</li>
-                    <li>A breakdown of scholarships and how to apply</li>
-                    <li>Information on New Zealand universities and what they offer</li>
-                    <li>Advice on finance and accommodation for students</li>
-                    <li>Insights into university life, clubs, and support services</li>
-                    <li>Tips for international students coming to New Zealand</li>
-                    <li>Answers to common questions about university</li>
-                </ul>
+            <h3>What you’ll find here:</h3>
+            <ul>
+                <li>Step-by-step guidance on university admission</li>
+                <li>A breakdown of scholarships and how to apply</li>
+                <li>Information on New Zealand universities and what they offer</li>
+                <li>Advice on finance and accommodation for students</li>
+                <li>Insights into university life, clubs, and support services</li>
+                <li>Tips for international students coming to New Zealand</li>
+                <li>Answers to common questions about university</li>
+            </ul>
 
-                <p class="closing-text">
+            <p class="closing-text">
                 Our goal is to make your transition to university as smooth as possible. Let’s get started!
-                </p>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/home/index.html">Home</a></li>
+                    <li><a href="../universityEntrance/universityEntrance.html">University Entrance</a></li>
+                    <li><a href="../scholarships/scholarships.html">Scholarships</a></li>
+                    <li><a href="../internationalStudents/internationalStudents.html">International Students</a></li>
+                    <li><a href="../FAQ's/FAQ's.html">FAQ's</a></li>
+                </ul>
             </div>
-        </section>
-
-        <footer>
-            <div class="footer-container">
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="/home/index.html">Home</a></li>
-                        <li><a href="../universityEntrance/universityEntrance.html">University Entrance</a></li>
-                        <li><a href="../scholarships/scholarships.html">Scholarships</a></li>
-                        <li><a href="../internationalStudents/internationalStudents.html">International Students</a></li>
-                        <li><a href="../FAQ's/FAQ's.html">FAQ's</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <p>Email: <a href="mailto:info@uniinfo.nz">info@uniready.nz</a></p>
-                    <p>Phone: +64 123 456 789</p>
-                    <p>Address: 123 University Rd, Wellington, NZ</p>
-                </div>
-
-                <div class="footer-social">
-                    <h3>Follow Us</h3>
-                    <ul class="social-icons">
-                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f icon"></i></a></li>
-                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icon"></i></a></li>
-                        <li><a href="https://nz.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
-                        <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube icon"></i></a></li>
-                    </ul>
-                </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@uniinfo.nz">info@uniready.nz</a></p>
+                <p>Phone: +64 123 456 789</p>
+                <p>Address: 123 University Rd, Wellington, NZ</p>
             </div>
-
-            <div class="footer-bottom">
-                <p>© 2025 UniReady.</p>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f icon"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icon"></i></a></li>
+                    <li><a href="https://nz.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube icon"></i></a></li>
+                </ul>
             </div>
-        </footer>
-        <script src="/script.js"></script>
-    </body>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 UniReady.</p>
+        </div>
+    </footer>
+    <script src="/script.js"></script>
+</body>
 </html>

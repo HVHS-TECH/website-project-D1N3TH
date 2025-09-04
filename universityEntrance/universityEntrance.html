@@ -9,42 +9,46 @@
     </head>
     <body>
         <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="/home/index.html" class="hover-underline">Home</a></li>
-
-            <li class="dropdown">
-                <a href="#" class="hover-underline">University Admission</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../universityEntrance/universityEntrance.html" class="holographic-animation">University Entrance</a></li>
-                    <li><a href="../scholarships/scholarships.html" class="holographic-animation">Scholarships</a></li>
-                    <li><a href="../nzUniversities/nzUniversities.html" class="holographic-animation">NZ Universities</a></li>
-                </ul>
-            </li>
-
-            <li class="dropdown">
-                <a href="#" class="hover-underline">Student Life</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../universityLife/universityLife.html" class="holographic-animation">University Life</a></li>
-                    <li><a href="../finance&Accommodation/finance&Accommodation.html" class="holographic-animation">Finance and Accommodation</a></li>
-                    <li><a href="../internationalStudents/internationalStudents.html" class="holographic-animation">International Students</a></li>
-                </ul>
-            </li>
-
-            <li class="dropdown">
-                <a href="#" class="hover-underline">Help & Resources</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../FAQ's/FAQ's.html" class="holographic-animation">FAQ's</a></li>
-                </ul>
-            </li>
-            <li>
-                <form id="searchForm" onsubmit="searchMaterial(event)">
-                    <input type="search" id="searchInput" placeholder="Search here..." autocomplete="off">
-                    <i class="fa fa-search" onclick="document.getElementById('searchForm').requestSubmit()"></i>
-                </form>
-            </li>
-        </ul>
-
-        <div id="results"></div>
+            <div class="logo-container">
+                <a href="/home/index.html">
+                    <img src="/images/websiteLogo.png" alt="UniReady Logo">
+                </a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-list">
+                <li><a href="/home/index.html" class="hover-underline">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="hover-underline">University Admission</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../universityEntrance/universityEntrance.html" class="holographic-animation">University Entrance</a></li>
+                        <li><a href="../scholarships/scholarships.html" class="holographic-animation">Scholarships</a></li>
+                        <li><a href="../nzUniversities/nzUniversities.html" class="holographic-animation">NZ Universities</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="hover-underline">Student Life</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../universityLife/universityLife.html" class="holographic-animation">University Life</a></li>
+                        <li><a href="../finance&Accommodation/finance&Accommodation.html" class="holographic-animation">Finance and Accommodation</a></li>
+                        <li><a href="../internationalStudents/internationalStudents.html" class="holographic-animation">International Students</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="hover-underline">Help & Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../FAQ's/FAQ's.html" class="holographic-animation">FAQ's</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <form id="searchForm" onsubmit="searchMaterial(event)">
+                        <input type="search" id="searchInput" placeholder="Search here..." autocomplete="off">
+                        <i class="fa fa-search" onclick="document.getElementById('searchForm').requestSubmit()"></i>
+                    </form>
+                </li>
+            </ul>
+            <div id="results"></div>
         </nav>
 
         <section class="welcome-section">
@@ -52,17 +56,16 @@
                 <h2 id="university-entrance-main">University Entrance</h2>
                 <h3 id="what-you-need">What you actually need to get in to university...</h3>
                 <p>
-                Understanding how to get into university is essential for every student. Here’s a step-by-step guide to help you meet the entrance requirements in New Zealand. 
-                To gain University Entrance you need:
-                <ul>
-
-                
-                <li><a id="ncea-level3">NCEA Level 3</a></li>
-                <li><a id="approved-subjects">14 credits in three approved subjects</a></li>
-                <li><a id="literacy-credits">10 literacy credits (5 in reading, 5 in writing)</a></li>
-                <li><a id="numeracy-credits">10 numeracy credits</a></li>
-                <li><a id="specific-programs">Some universities or specific programs (e.g. Medicine, Law, Engineering) have higher entry requirements or require extra assessments. Always check university websites for details.</a></li>
-                </ul>
+                    Understanding how to get into university is essential for every student. Here’s a step-by-step guide to help you meet the entrance requirements in New Zealand.
+                    To gain University Entrance you need:
+                    <ul>
+                        <li><a id="ncea-level3">NCEA Level 3</a></li>
+                        <li><a id="approved-subjects">14 credits in three approved subjects</a></li>
+                        <li><a id="literacy-credits">10 literacy credits (5 in reading, 5 in writing)</a></li>
+                        <li><a id="numeracy-credits">10 numeracy credits</a></li>
+                        <li><a id="specific-programs">Some universities or specific programs (e.g. Medicine, Law, Engineering) have higher entry requirements or require extra assessments. Always check university websites for details.</a></li>
+                    </ul>
+                </p>
             </div>
         </section>
 
