@@ -353,3 +353,109 @@ const navList = document.querySelector('.nav-list');
 mobileMenu.addEventListener('click', () => {
     navList.classList.toggle('active');
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Hide/Show content functionality
+    const toggleButton = document.getElementById('toggleButton');
+    const toggleContent = document.getElementById('toggleContent');
+
+    if (toggleButton && toggleContent) {
+        toggleButton.addEventListener('click', () => {
+            if (toggleContent.classList.contains('content-hidden')) {
+                toggleContent.classList.remove('content-hidden');
+                toggleContent.classList.add('content-visible');
+                toggleButton.textContent = 'Hide Content';
+            } else {
+                toggleContent.classList.remove('content-visible');
+                toggleContent.classList.add('content-hidden');
+                toggleButton.textContent = 'Show Content';
+            }
+        });
+    }
+
+    // Existing search and mobile menu code
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+    const searchForm = document.getElementById('searchForm');
+    const searchInput = document.getElementById('searchInput');
+    const resultsContainer = document.getElementById('results');
+
+    // Toggle mobile menu
+    mobileMenu.addEventListener('click', () => {
+        navList.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    });
+
+    // Hide mobile menu when a link is clicked
+    document.querySelectorAll('.nav-list li a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (navList.classList.contains('active')) {
+                navList.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
+    });
+
+    const pageContent = {
+        'finance&Accommodation': ['finance', 'accommodation', 'student loans', 'budgeting', 'halls of residence', 'flatting'],
+        'internationalStudents': ['international students', 'visa', 'tuition fees', 'insurance', 'student support'],
+        'nzUniversities': ['university of auckland', 'victoria university', 'university of canterbury', 'university of otago', 'massey university', 'aut', 'lincoln university', 'university of waikato'],
+        'scholarships': ['scholarships', 'academic scholarships', 'sports scholarships', 'equity scholarships', 'maori scholarships', 'pasifika scholarships'],
+        'universityEntrance': ['university entrance', 'ncea level 3', 'literacy credits', 'numeracy credits', 'approved subjects'],
+        'universityLife': ['university life', 'student clubs', 'support services', 'campus facilities', 'events and activities']
+    };
+
+    function searchMaterial(event) {
+        event.preventDefault();
+        const query = searchInput.value.toLowerCase().trim();
+        resultsContainer.innerHTML = '';
+
+        if (query.length > 2) {
+            const matches = {};
+            for (const page in pageContent) {
+                if (pageContent[page].some(keyword => keyword.includes(query))) {
+                    matches[page] = true;
+                }
+            }
+            displayResults(matches);
+        }
+    }
+
+    function displayResults(matches) {
+        if (Object.keys(matches).length > 0) {
+            const ul = document.createElement('ul');
+            for (const page in matches) {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = `/${page}/${page}.html`;
+                a.textContent = formatPageName(page);
+                li.appendChild(a);
+                ul.appendChild(li);
+            }
+            resultsContainer.appendChild(ul);
+        } else {
+            resultsContainer.textContent = 'No results found.';
+        }
+    }
+
+    function formatPageName(page) {
+        switch (page) {
+            case 'finance&Accommodation':
+                return 'Finance & Accommodation';
+            case 'internationalStudents':
+                return 'International Students';
+            case 'nzUniversities':
+                return 'NZ Universities';
+            case 'scholarships':
+                return 'Scholarships';
+            case 'universityEntrance':
+                return 'University Entrance';
+            case 'universityLife':
+                return 'University Life';
+            default:
+                return page;
+        }
+    }
+
+    searchForm.addEventListener('submit', searchMaterial);
+});
