@@ -289,9 +289,6 @@ body {
     color: white;
     font-size: 5rem;
     font-weight: bold;
-}
-
-.text1, .text2, .text3 {
     text-shadow:
     -2px -2px 0 black,
     2px -2px 0 black,
