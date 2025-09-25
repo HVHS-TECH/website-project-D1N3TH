@@ -1,9 +1,15 @@
+/*-----------------------------------------------------------*/
+// script.js
+/*-----------------------------------------------------------*/
 const searchInput = document.getElementById('searchInput');
 const resultsDiv = document.getElementById('results');
 const searchForm = document.getElementById('searchForm');
 
 let searchableContent = [];
 
+/**
+ * Contains all searchable content
+ */
 function populateSearchableContent() {
     searchableContent = [
         {
@@ -216,6 +222,9 @@ function populateSearchableContent() {
 
 populateSearchableContent();
 
+/**
+ * 
+ */
 function searchMaterial(event) {
     event.preventDefault();
     const query = searchInput.value.toLowerCase().trim();

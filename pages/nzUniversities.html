@@ -3,25 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Home</title>
-        <link rel="stylesheet" href="/style.css">
+        <title>NZ Universities</title>
+        <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     </head>
-
     <body>
         <nav class="navbar">
             <div class="logo-container">
-                <a href="/index.html">
-                    <img src="/images/websiteLogo.png" alt="UniReady Logo">
+                <a href="../index.html">
+                    <img src="../images/websiteLogo.png" alt="UniReady Logo">
                 </a>
             </div>
             <div class="menu-toggle" id="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-list">
-                <li>
-                    <a href="/index.html" class="hover-underline">Home</a>
-                </li>
+                <li><a href="../index.html" class="hover-underline">Home</a></li>
                 <li class="dropdown">
                     <a href="#" class="hover-underline">University Admission</a>
                     <ul class="dropdown-menu">
@@ -54,38 +51,23 @@
             <div id="results"></div>
         </nav>
 
-        <div class="container">
-            <img src="../images/heroImage.jpeg" alt="Home Page Image (University Students)">
-            <div class="text1">Everything You</div>
-            <div class="text2">Need to Know</div>
-            <div class="text3">About University</div>
-            <div class="text4">Scroll down for more info</div>
-            <i class="fa fa-angle-double-down fa-border"></i>
-        </div>
-
         <section class="welcome-section">
             <div class="welcome-container">
-                <h2>Welcome to UniReady</h2>
-                <p>
-                    Your go-to guide for understanding the university process in New Zealand!
-                    We know that planning for university can be overwhelming, so we’ve created this website to help Year 12 and 13 students
-                    navigate everything from university entrance requirements to scholarships, accommodation, and student life.
-                </p>
-
-                <h3>What you’ll find here:</h3>
+                <h2 id="nz-universities-main">NZ Universities</h2>
+                <h3 id="where-to-study">So where can I study in New Zealand?</h3>
+                <button id="toggleButton">Explore</button>
+                <div id="toggleContent" class="content-hidden">
                 <ul>
-                    <li>Step-by-step guidance on university admission</li>
-                    <li>A breakdown of scholarships and how to apply</li>
-                    <li>Information on New Zealand universities and what they offer</li>
-                    <li>Advice on finance and accommodation for students</li>
-                    <li>Insights into university life, clubs, and support services</li>
-                    <li>Tips for international students coming to New Zealand</li>
-                    <li>Answers to common questions about university</li>
+                    <li><a id="uoa">University of Auckland</a> - Largest university, strong in research</li>
+                    <li><a id="vuw">Victoria University of Wellington</a> - Known for Law and Humanities</li>
+                    <li><a id="uoc">University of Canterbury</a> - Strong in Engineering and Science</li>
+                    <li><a id="uoo">University of Otago</a> - Famous for Health Sciences and Student Life</li>
+                    <li><a id="massey">Massey University</a> - Specialises in Distance Learning and Agriculture</li>
+                    <li><a id="aut">Auckland University of Technology</a> - Innovative and Modern</li>
+                    <li><a id="lincoln">Lincoln University</a> - Focused on Environment and Agribusiness</li>
+                    <li><a id="uow">University of Waikato</a> - Strengths in IT and business</li>
                 </ul>
-
-                <p class="closing-text">
-                    Our goal is to make your transition to university as smooth as possible. Let’s get started!
-                </p>
+            </div>
             </div>
         </section>
 
@@ -101,12 +83,14 @@
                         <li><a href="../pages/FAQ's.html">FAQ's</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-contact">
                     <h3>Contact Us</h3>
                     <p>Email: <a href="mailto:info@uniinfo.nz">info@uniready.nz</a></p>
                     <p>Phone: +64 123 456 789</p>
                     <p>Address: 123 University Rd, Wellington, NZ</p>
                 </div>
+
                 <div class="footer-social">
                     <h3>Follow Us</h3>
                     <ul class="social-icons">
@@ -117,10 +101,11 @@
                     </ul>
                 </div>
             </div>
+
             <div class="footer-bottom">
                 <p>© 2025 UniReady.</p>
             </div>
         </footer>
-        <script src="/script.js"></script>
+        <script src="../script.js"></script>
     </body>
 </html>
