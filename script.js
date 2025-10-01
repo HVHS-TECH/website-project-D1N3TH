@@ -296,7 +296,7 @@ resultsDiv.addEventListener('click', function(event) {
         event.preventDefault();
 
         const fullUrl = targetLink.href;
-        const urlObject = new URl(fullUrl);
+        const urlObject = new URL(fullUrl);
         const urlPath = urlObject.pathname;
         const targetId = urlObject.hash ? urlObject.hash.substring(1) : null;
         const linkedPageFile = urlPath.split('/').pop();
