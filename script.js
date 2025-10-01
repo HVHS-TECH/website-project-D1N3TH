@@ -14,7 +14,7 @@ function populateSearchableContent() {
     searchableContent = [
         {
             title: "Home Page",
-            url: "../index.html",
+            url: "index.html",
             keywords: "home, main page, uniready, welcome, new zealand universities, student life, university admission, help resources"
         },
         {
