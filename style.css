@@ -284,7 +284,7 @@ body {
     width: 100%;
 }
 
-.text1, .text2, .text3, .text4, .fa fa-angle-double-down {
+.text1, .text2, .text3, .text4 {
     position: absolute;
     color: white;
     font-size: 6rem;
@@ -328,6 +328,12 @@ body {
     font-size: 3rem;
     top: 90%;
     left: 48%;
+    z-index: 10;
+    text-shadow: 
+    -1.5px -1.5px 0 black,
+    1.5px -1.5px 0 black,
+    -1.5px 1.5px 0 black,
+    1.5px 1.5px 0 black;
 }
 
 .welcome-section {
