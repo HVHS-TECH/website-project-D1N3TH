@@ -218,6 +218,32 @@ function populateSearchableContent() {
 populateSearchableContent();
 
 /**
+ * @returns {boolean}
+ */
+function isCurrentPageInFolder() {
+    const path = window.location.pathname;
+    return path.includes('/pages/');
+}
+
+/**
+ * 
+ * @param {string}
+ * @returns {string}
+ */
+function getCorrectedUrl(rootUrl) {
+    if (isCurrentPageInFolder()) {
+        if (rootUrl === "index.html" || rootUrl.startsWith("index.html#")) {
+            return "../" + rootUrl;
+        }
+
+        if (rootUrl.startsWith("pages/")) {
+            return rootUrl.substring(6);
+        }
+    }
+    return rootUrl;
+}
+
+/**
  * 
  */
 function searchMaterial(event) {
@@ -242,7 +268,7 @@ function searchMaterial(event) {
         filteredResults.forEach(item => {
             const li = document.createElement('li');
             const a = document.createElement('a');
-            a.href = item.url;
+            a.href = getCorrectedUrl(item.url);
             a.textContent = item.title;
 
             li.appendChild(a);
@@ -270,9 +296,9 @@ resultsDiv.addEventListener('click', function(event) {
         event.preventDefault();
 
         const fullUrl = targetLink.href;
-        const hashIndex = fullUrl.indexOf('#');
-        const urlPath = hashIndex !== -1 ? fullUrl.substring(0, hashIndex) : fullUrl;
-        const targetId = hashIndex !== -1 ? fullUrl.substring(hashIndex + 1) : null;
+        const urlObject = new URl(fullUrl);
+        const urlPath = urlObject.pathname;
+        const targetId = urlObject.hash ? urlObject.hash.substring(1) : null;
         const linkedPageFile = urlPath.split('/').pop();
         const currentPageFile = window.location.pathname.split('/').pop();
         const isCurrentPage = (linkedPageFile === currentPageFile);
