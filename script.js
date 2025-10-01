@@ -19,192 +19,192 @@ function populateSearchableContent() {
         },
         {
             title: "University Entrance Requirements (Main)",
-            url: "universityEntrance.html",
+            url: "pages/universityEntrance.html",
             keywords: "university entrance, NCEA, level 3, credits, literacy, numeracy, requirements, what you need to get in, admission criteria"
         },
         {
             title: "University Entrance - NCEA Level 3",
-            url: "universityEntrance.html#ncea-level3",
+            url: "pages/universityEntrance.html#ncea-level3",
             keywords: "NCEA Level 3, entrance requirements, NCEA credits"
         },
         {
             title: "University Entrance - Approved Subjects",
-            url: "universityEntrance.html#approved-subjects",
+            url: "pages/universityEntrance.html#approved-subjects",
             keywords: "approved subjects, 14 credits, subject requirements"
         },
         {
             title: "University Entrance - Literacy",
-            url: "universityEntrance.html#literacy-credits",
+            url: "pages/universityEntrance.html#literacy-credits",
             keywords: "literacy credits, reading, writing, 10 literacy credits"
         },
         {
             title: "University Entrance - Numeracy",
-            url: "universityEntrance.html#numeracy-credits",
+            url: "pages/universityEntrance.html#numeracy-credits",
             keywords: "numeracy credits, 10 numeracy credits"
         },
         {
             title: "University Entrance - Specific Programs",
-            url: "universityEntrance.html#specific-programs",
+            url: "pages/universityEntrance.html#specific-programs",
             keywords: "medicine, law, engineering, higher entry requirements, extra assessments, program specific"
         },
         {
             title: "Scholarships (Overview)",
-            url: "scholarships.html",
+            url: "pages/scholarships.html",
             keywords: "scholarships, how they work, how to get one, financial aid, funding, tuition, support"
         },
         {
             title: "Scholarships - Types",
-            url: "scholarships.html#types-of-scholarships",
+            url: "pages/scholarships.html#types-of-scholarships",
             keywords: "types of scholarships, academic, sports, cultural, equity, māori, pasifika, merit, talent"
         },
         {
             title: "Scholarships - Where to Find",
-            url: "scholarships.html#where-to-find",
+            url: "pages/scholarships.html#where-to-find",
             keywords: "find scholarships, universities official websites, StudyLink, NZ Government, private organisations, companies"
         },
         {
             title: "Scholarships - Application Tips",
-            url: "scholarships.html#application-tips",
+            url: "pages/scholarships.html#application-tips",
             keywords: "scholarship application tips, start early, deadlines, personal statement, recommendation letters, meet criteria"
         },
         {
             title: "NZ Universities (Overview)",
-            url: "nzUniversities.html",
+            url: "pages/nzUniversities.html",
             keywords: "new zealand universities, where to study, list of universities, top universities NZ"
         },
         {
             title: "University of Auckland",
-            url: "nzUniversities.html#uoa",
+            url: "pages/nzUniversities.html#uoa",
             keywords: "university of auckland, largest university, research, Auckland city"
         },
         {
             title: "Victoria University of Wellington",
-            url: "nzUniversities.html#vuw",
+            url: "pages/nzUniversities.html#vuw",
             keywords: "victoria university of wellington, law, humanities, Wellington city"
         },
         {
             title: "University of Canterbury",
-            url: "nzUniversities.html#uoc",
+            url: "pages/nzUniversities.html#uoc",
             keywords: "university of canterbury, engineering, science, Christchurch"
         },
         {
             title: "University of Otago",
-            url: "nzUniversities.html#uoo",
+            url: "pages/nzUniversities.html#uoo",
             keywords: "university of otago, health sciences, student life, Dunedin"
         },
         {
             title: "Massey University",
-            url: "nzUniversities.html#massey",
+            url: "pages/nzUniversities.html#massey",
             keywords: "massey university, distance learning, agriculture, veterinary science, Palmerston North, Albany"
         },
         {
             title: "Auckland University of Technology (AUT)",
-            url: "nzUniversities.html#aut",
+            url: "pages/nzUniversities.html#aut",
             keywords: "auckland university of technology, AUT, innovative, modern, practical, Auckland city"
         },
         {
             title: "Lincoln University",
-            url: "nzUniversities.html#lincoln",
+            url: "pages/nzUniversities.html#lincoln",
             keywords: "lincoln university, environment, agribusiness, land-based, Christchurch"
         },
         {
             title: "University of Waikato",
-            url: "nzUniversities.html#uow",
+            url: "pages/nzUniversities.html#uow",
             keywords: "university of waikato, IT, business, Hamilton"
         },
         {
             title: "Finance and Accommodation (Overview)",
-            url: "finance&Accommodation.html",
+            url: "pages/finance&Accommodation.html",
             keywords: "finance, accommodation, living costs, housing, budgeting, student loans, expenses"
         },
         {
             title: "Finance and Accommodation - Student Loans & Allowances",
-            url: "finance&Accommodation.html#student-loans",
+            url: "pages/finance&Accommodation.html#student-loans",
             keywords: "student loans, student allowances, StudyLink, government support, financial assistance"
         },
         {
             title: "Finance and Accommodation - Accommodation Options",
-            url: "finance&Accommodation.html#accommodation-options",
+            url: "pages/finance&Accommodation.html#accommodation-options",
             keywords: "accommodation options, halls of residence, flatting, private rentals, homestay, student housing"
         },
         {
             title: "Finance and Accommodation - Budgeting & Living Costs",
-            url: "finance&Accommodation.html#budgeting",
+            url: "pages/finance&Accommodation.html#budgeting",
             keywords: "budgeting, living costs, managing money, expenses, rent, utilities, food, transport"
         },
         {
             title: "University Life (Overview)",
-            url: "universityLife.html",
+            url: "pages/universityLife.html",
             keywords: "university life, what to expect, student experience, campus activities, academic life"
         },
         {
             title: "University Life - Student Clubs & Societies",
-            url: "universityLife.html#student-clubs",
+            url: "pages/universityLife.html#student-clubs",
             keywords: "student clubs, societies, cultural clubs, academic clubs, sports clubs, extracurricular activities, making friends"
         },
         {
             title: "University Life - Support Services",
-            url: "universityLife.html#support-services",
+            url: "pages/universityLife.html#support-services",
             keywords: "support services, health, mental well-being, academic help, counselling, disability support"
         },
         {
             title: "University Life - Campus Facilities",
-            url: "universityLife.html#campus-facilities",
+            url: "pages/universityLife.html#campus-facilities",
             keywords: "campus facilities, cafes, libraries, study spaces, recreation centers, student union"
         },
         {
             title: "University Life - Events & Activities",
-            url: "universityLife.html#events-activities",
+            url: "pages/universityLife.html#events-activities",
             keywords: "events, activities, uni games, music festivals, networking events, social life"
         },
         {
             title: "International Students (Overview)",
-            url: "internationalStudents.html",
+            url: "pages/internationalStudents.html",
             keywords: "international students, guide, overseas students, moving to NZ, studying in New Zealand"
         },
         {
             title: "International Students - Visa Requirements",
-            url: "internationalStudents.html#visa-requirements",
+            url: "pages/internationalStudents.html#visa-requirements",
             keywords: "visa requirements, student visa, Immigration NZ, proof of funds, health insurance, travel insurance"
         },
         {
             title: "International Students - English Language Requirements",
-            url: "internationalStudents.html#english-requirements",
+            url: "pages/internationalStudents.html#english-requirements",
             keywords: "english language requirements, IELTS, TOEFL, recognized tests, english proficiency"
         },
         {
             title: "International Students - Adjusting to Life in NZ",
-            url: "internationalStudents.html#adjusting-to-nz",
+            url: "pages/internationalStudents.html#adjusting-to-nz",
             keywords: "adjusting to NZ, life in new zealand, student groups, kiwi culture, local food, public transport"
         },
         {
             title: "FAQ's (Overview)",
-            url: "FAQ's.html",
+            url: "pages/FAQ's.html",
             keywords: "FAQ's, frequently asked questions, common questions, answers, help, resources"
         },
         {
             title: "FAQ's - University Admission",
-            url: "FAQ's.html#faq-admission",
+            url: "pages/FAQ's.html#faq-admission",
             keywords: "faq admission, how to apply, application process, entry requirements, what do I need"
         },
         {
             title: "FAQ's - Student Loans and Allowances",
-            url: "FAQ's.html#faq-loans",
+            url: "pages/FAQ's.html#faq-loans",
             keywords: "faq student loans, faq student allowances, how to get money for university, funding, financial support"
         },
         {
             title: "FAQ's - Changing Courses or Universities",
-            url: "FAQ's.html#faq-changes",
+            url: "pages/FAQ's.html#faq-changes",
             keywords: "faq changing courses, faq changing universities, course transfer, university transfer, changing mind"
         },
         {
             title: "FAQ's - Student Support",
-            url: "FAQ's.html#faq-support",
+            url: "pages/FAQ's.html#faq-support",
             keywords: "faq student support, help services, academic help, personal support"
         },
         {
             title: "FAQ's - Accommodation",
-            url: "FAQ's.html#faq-accommodation",
+            url: "pages/FAQ's.html#faq-accommodation",
             keywords: "faq accommodation, where to live, student housing, flatting, halls"
         },
         {
