@@ -23,29 +23,19 @@ function populateSearchableContent() {
             keywords: "university entrance, NCEA, level 3, credits, literacy, numeracy, requirements, what you need to get in, admission criteria"
         },
         {
-            title: "University Entrance - NCEA Level 3",
-            url: "pages/universityEntrance.html#ncea-level3",
-            keywords: "NCEA Level 3, entrance requirements, NCEA credits"
-        },
-        {
-            title: "University Entrance - Approved Subjects",
+            title: "University Entrance - Approved Subjects Detail",
             url: "pages/universityEntrance.html#approved-subjects",
-            keywords: "approved subjects, 14 credits, subject requirements"
+            keywords: "approved subjects, 14 credits, subject requirements, NZQA, NCEA Level 3"
         },
         {
-            title: "University Entrance - Literacy",
-            url: "pages/universityEntrance.html#literacy-credits",
-            keywords: "literacy credits, reading, writing, 10 literacy credits"
+            title: "University Entrance - Alternative Pathways (CIE/IB)",
+            url: "pages/universityEntrance.html#alternative-pathways",
+            keywords: "CIE, IB, Cambridge, International Baccalaureate, special admission, adult entry"
         },
         {
-            title: "University Entrance - Numeracy",
-            url: "pages/universityEntrance.html#numeracy-credits",
-            keywords: "numeracy credits, 10 numeracy credits"
-        },
-        {
-            title: "University Entrance - Specific Programs",
-            url: "pages/universityEntrance.html#specific-programs",
-            keywords: "medicine, law, engineering, higher entry requirements, extra assessments, program specific"
+            title: "University Entrance - Next Steps",
+            url: "pages/universityEntrance.html#next-steps-ue",
+            keywords: "next steps, application, what to do after UE, applying to university"
         },
         {
             title: "Scholarships (Overview)",
@@ -430,18 +420,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const toggleContent = document.getElementById('toggleContent');
 
     if (toggleButton && toggleContent) {
-        const isHidden = toggleContent.classList.contains('content-hidden');
-        toggleButton.textContent = isHidden ? 'Explore' : 'Hide Content';
+        const toggleIcon = toggleButton.querySelector('i');
+
+        if (toggleContent.classList.contains('content-hidden')) {
+             toggleButton.innerHTML = 'Show More <i class="fas fa-chevron-down"></i>';
+        } else {
+             toggleButton.innerHTML = 'Show Less <i class="fas fa-chevron-up rotated"></i>';
+        }
 
         toggleButton.addEventListener('click', () => {
             if (toggleContent.classList.contains('content-hidden')) {
+
                 toggleContent.classList.remove('content-hidden');
                 toggleContent.classList.add('content-visible');
-                toggleButton.textContent = 'Hide Content';
+                toggleButton.innerHTML = 'Show Less <i class="fas fa-chevron-up rotated"></i>';
             } else {
                 toggleContent.classList.remove('content-visible');
                 toggleContent.classList.add('content-hidden');
-                toggleButton.textContent = 'Explore';
+                toggleButton.innerHTML = 'Show More <i class="fas fa-chevron-down"></i>';
             }
         });
     }
