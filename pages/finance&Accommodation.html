@@ -53,34 +53,125 @@
 
         <section class="welcome-section">
             <div class="welcome-container">
-                <h2 id="finance-accommodation-main">Finance and Accommodation</h2>
-                <h3 id="managing-finances-housing">Managing your finances and finding a place to live while studying</h3>
-                <button id="toggleButton">Explore</button>
+                <h1 id="finance-accommodation-main">Finance & Accommodation: Your Essentials Guide</h1>
+                <p>
+                    Understanding student finances and finding the right place to live are two of the biggest
+                     factors in a successful university transition. Planning ahead for both is vital.
+                </p>
+
+                <button id="toggleButton" class="toggle-button">
+                    View Detailed Finance and Housing Information <i class="fas fa-chevron-down"></i>
+                </button>
+
                 <div id="toggleContent" class="content-hidden">
-                    University life brings new financial responsibilities and housing choices. Here’s a breakdown of what you need to know:
-                    <ol>
-                        <li><a id="student-loans">Student Loans and Allowances</a></li>
-                        <ul>
-                            <li>StudyLink is the New Zealand government service for student financial support.</li>
-                            <li>Apply for student loans to cover course fees and living costs.</li>
-                            <li>Student allowances are available for eligible students based on income and circumstances.</li>
+                   
+                    <h2 id="student-loans">1. Funding Your Study: Student Loans and Allowances</h2>
+                    <p>
+                        The New Zealand government offers financial support to eligible domestic 
+                        students primarily through StudyLink, a service operated by the Ministry of Social 
+                        Development (MSD). You must apply through them.
+                    </p>
+
+                    <ul class="detail-list">
+                        <li>
+                            <i class="fas fa-dollar-sign"></i> Student Loan (Interest-Free): 
+                            Covers compulsory tuition fees, course-related costs (up to a set limit), 
+                            and living costs. Repayments only begin once you earn over a certain threshold.
+                        </li>
+                        <li>
+                            <i class="fas fa-hand-holding-usd"></i> Student Allowance: A weekly tax-free payment
+                             for eligible students. Eligibility is based on your income, your parents' income,
+                              and whether you are single or have dependents. This is a grant, not a loan.
+                        </li>
+                        <li>
+                            <i class="fas fa-book-open"></i> Course-Related Costs: Part of the Student Loan 
+                            designed to cover books, stationery, and equipment (like a laptop). 
+                            You must spend the money on approved costs.
+                        </li>
+                    </ul>
+
+                    <div class="callout-box">
+                        <i class="fas fa-clock"></i>Key Deadline: You should apply to StudyLink at least 4-6 weeks
+                         before your course starts to ensure your funding is processed in time for the start of the semester.
+                    </div>
+
+                    <h2 id="budgeting">2. Mastering Your Budget</h2>
+                    <p>
+                        Creating a realistic budget will help you stretch your Student Loan/Allowance throughout the year. 
+                        Be honest about your spending habits.
+                    </p>
+
+                    <ul class="detail-list">
+                        <li>
+                            Track Everything: Use a spreadsheet or budgeting app to monitor income 
+                            (loan, part-time job, allowance) and expenses (rent, food, bills, social).
+                        </li>
+                        <li>
+                            Fixed vs. Variable: Separate Fixed Costs (rent, insurance) from Variable Costs 
+                            (groceries, transport, entertainment) to see where you can save.
+                        </li>
+                        <li>Student Discounts: Always ask! Your student ID card can unlock savings 
+                            on transport, cinema tickets, retail, and more.
+                        </li>
+                        <li>Part-Time Work: Most students work part-time. Be careful to balance 
+                            work hours with your study load to maintain good grades.
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                        <h2 id="accommodation-options">3. Housing Choices: Finding Your Home</h2>
+                        <p>
+                            Your accommodation choice often defines your first-year experience 
+                            and budget. The main options are:
+                        </p>
+
+                        <ul class="detail-list accommodation-grid">
+                            <li>
+                                <i class="fas fa-bed"></i> <strong>Halls of Residence (Dormitories)</strong>
+                                <p>
+                                    <strong>Ideal for:</strong> First-year students. 
+                                    <strong>Pros:</strong> Fully furnished, 
+                                    meals often provided (catered), massive social network, close to campus, 
+                                    utilities included. 
+                                    <strong>Cons:</strong> Most expensive option, less independence, 
+                                    must apply early (often close in September/October).
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fas fa-home"></i> <strong>Flatting (Shared Rental)</strong>
+                                <p>
+                                    <strong>Ideal for:</strong> Second-year onwards. 
+                                    <strong>Pros:</strong> Most independent, cheaper weekly cost, you 
+                                    choose your flatmates. 
+                                    <strong>Cons:</strong> Bills not included, requires furniture/appliances, 
+                                    long leases (12 months), responsible for finding tenants.
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fas fa-users"></i> <strong>Private or University Apartments</strong>
+                                <p>
+                                    <strong>Ideal for:</strong> Post-graduate or mature students. 
+                                    <strong>Pros:</strong> Modern and secure, self-catered with private bedrooms. 
+                                    <strong>Cons:</strong> Usually more expensive than flatting, social aspect varies.
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fas fa-house-user"></i> <strong>Living at Home (Commuting)</strong>
+                                <p>
+                                    <strong>Ideal for:</strong> Students attending local universities or those prioritising low cost. 
+                                    <strong>Pros:</strong> Virtually eliminates rent and utility bills (huge financial saving), provides family support and home comforts. 
+                                    <strong>Cons:</strong> Time and cost of commuting, less social immersion in campus life, reduced independence.
+                                </p>
+                            </li>
                         </ul>
 
-                        <li><a id="accommodation-options">Accommodation Options</a></li>
-                        <ul>
-                            <li>Halls of Residence: University-managed accommodation, often catered, great for first-year students.</li>
-                            <li>Flatting: Renting a house or apartment with other students, offering more independence.</li>
-                            <li>Homestay: Living with a local family, often chosen by international students for cultural immersion.</li>
-                            <li>Private Rentals: Finding your own rental property.</li>
-                        </ul>
-                        <li><a id="budgeting">Budgeting and Living Costs</a></li>
-                        <ul>
-                            <li>Create a budget to track your income and expenses.</li>
-                            <li>Typical weekly costs include rent, food, utilities (power, internet), transport, and social activities.</li>
-                            <li>Look for student discounts and part-time job opportunities to help manage costs.</li>
-                        </ul>
-                    </ol>
-            </div>
+                        <div class="next-steps-links">
+                            <h3>Need More Help?</h3>
+                            <a href="https://www.studylink.govt.nz/" target="_blank" class="cta-link"><i class="fas fa-external-link-alt"></i> Go to the StudyLink Website</a>
+                            <a href="universityLife.html" class="cta-link"><i class="fas fa-user-friends"></i> See Campus Social Life</a>
+                        </div>
+                </div>
             </div>
         </section>
 
